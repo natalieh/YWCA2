@@ -1,0 +1,468 @@
+html * {
+    margin: 0;
+    /*padding: 0; SELECT NOT DISPLAYED CORRECTLY IN FIREFOX */
+}
+
+/* GENERAL */
+
+.spinner {
+    padding: 5px;
+    position: absolute;
+    right: 0;
+}
+
+body {
+    background-color: #F76011;
+    color: #333;
+    font: 11px verdana, arial, helvetica, sans-serif;
+}
+
+a:link, a:visited, a:hover {
+    color: #666;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h1 {
+    color: #48802c;
+    font-weight: normal;
+    font-size: 16px;
+    margin: .8em 0 .3em 0;
+}
+
+h2 {
+	color: #333;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 125%;
+	padding: 10px 20px 0px 20px;
+	text-align: left;
+	white-space: preline;
+	vertical-align: bottom;
+}
+
+h3 {
+	color: #333;
+	font-weight: bold;
+	font-size: 25px;
+	margin-top: 10px;
+	padding: 10px 0px;
+	white-space: nowrap;
+}
+
+ul {
+    padding-left: 15px;
+}
+
+input, select, textarea {
+    background-color: #fcfcfc;
+    border: 1px solid #ccc;
+    font: 11px verdana, arial, helvetica, sans-serif;
+    margin: 2px 0;
+    padding: 2px 4px;
+}
+select {
+   padding: 2px 2px 2px 0;
+}
+textarea {
+	width: 250px;
+	height: 150px;
+	vertical-align: top;
+}
+
+input:focus, select:focus, textarea:focus {
+    border: 1px solid #b2d1ff;
+}
+
+.body {
+    float: left;
+    margin: 0 15px 10px 15px;
+}
+
+/* FILE FOLDER */
+
+.photoBkgd {
+	background: url(../images/backgrounds/photo_bkgd.png);
+	width: 293px;
+	height: 500px;
+	color: #333;	
+	font-size: 20px;
+	font: "Helvetica";
+	margin-top: -570px;
+	margin-left: 25px;
+	position: absolute;
+	float:left;
+	z-index:5;
+}
+
+.nameHeader {
+	background-image: url(../images/backgrounds/name_bkgd.png);
+    background-color: #F76011;
+    width: 395px;
+    height: 90px;
+    color: #333;
+	float: left;
+	font-size: 20px;
+	font: "Helvetica";
+	position: relative;
+	z-index:1;
+}
+
+.tabBar {
+	margin-top: 20px;
+}
+
+.biotab {
+	background-image: url(../images/buttons/bio.png);
+	width: 237px;
+	height: 77px;
+	margin-top: 16px;
+	margin-left: 375px;
+	position: absolute;
+	cursor: pointer;	
+ }
+ 
+ .careerstab {
+ 	background-image: url(../images/buttons/careers.png);
+ 	width: 237px;
+ 	height: 77px;
+ 	margin-top: 16px;
+ 	margin-left: 545px;
+ 	position: absolute;
+ 	cursor: pointer;
+ }
+ 
+ .educationtab {
+ 	background-image: url(../images/buttons/education.png);
+ 	width: 237px;
+ 	height: 77px;
+ 	margin-top: 16px;
+ 	margin-left: 715px;
+ 	position: absolute;
+ 	cursor: pointer;
+ }
+ 
+ .projectstab {
+ 	background-image: url(../images/buttons/projects.png);
+ 	width: 237px;
+ 	height: 77px;
+ 	margin-top: 16px;
+ 	margin-left: 885px;
+ 	position: absolute;
+    cursor: pointer;
+ }
+
+
+/* TAB BODIES */
+
+.biobody {
+	background: #F0FFFF url(../images/backgrounds/bio_bkgd.png);
+	width: 71%;
+	height: 88%;
+	margin-top: 112px;
+	margin-left: 375px;
+	position: relative;
+	z-index: 6;
+}
+
+.careerbody{
+	background: #D7FDFF;
+	width: 71%;
+	height: 88%;
+	margin-top: 112px;
+	margin-left: 375px;
+	position: relative;
+	z-index: 6;
+}
+
+.educationbody {
+	background: #A9FFFF;
+	width: 71%;
+	height: 88%;
+	margin-top: 112px;
+	margin-left: 375px;
+	position: relative;
+	z-index: 6;
+}
+
+.projectsbody {
+	background: 66FFFF;
+	width: 71%;
+	height: 88%;
+	margin-top: 112px;
+	margin-left: 375px;
+	position: relative;
+	z-index: 6;
+}
+
+/* HEADERS AND TEXT */
+
+.bodytext {
+	border: 0;
+	padding: 0px 30px;
+}
+
+.ywcaHeader{
+	background-color: #fff;
+	width:100%;
+	text-align: right;
+}
+
+/* NAVIGATION MENU */
+
+.nav {
+    background: #F76011;
+    border: 1px solid #ccc;
+    border-style: solid none solid none;
+    margin-top: 5px;
+    padding: 7px 12px;
+}
+
+.menuButton {
+    font-size: 10px;
+    margin-left: 350px;
+}
+.menuButton a {
+    color: #333;
+}
+.menuButton a.bio {
+    background: url(../images/buttons/bio.png) center left no-repeat;
+}
+.menuButton a.list {
+    background: url(../images/skin/database_table.png) center left no-repeat;
+    color: #333;
+    padding-left: 25px;
+}
+.menuButton a.create {
+    background: url(../images/skin/database_add.png) center left no-repeat;
+    color: #333;
+    padding-left: 25px;
+}
+
+/* MESSAGES AND ERRORS */
+
+.message {
+    background: #f3f8fc url(../images/skin/information.png) 8px 50% no-repeat;
+    border: 1px solid #b2d1ff;
+    color: #006dba;
+    margin: 10px 0 5px 0;
+    padding: 5px 5px 5px 30px
+}
+
+div.taberrors {
+	background: #fff;
+    color: #cc0000;
+    margin: 30px -10px 5px 0px;
+    width: 100%;
+    padding: 5px 0 5px 10px;
+    text-align: center;
+    font-size: 14px;
+    float: right;
+}
+div.taberrors ul {
+    list-style: none;
+    padding: 0;
+}
+div.taberrors li {
+	background: url(../images/skin/exclamation.png) 8px 0% no-repeat;
+    line-height: 16px;
+    padding-left: 30px;
+    text-align: center;
+}
+
+td.taberrors select {
+    border: 1px solid red;
+}
+td.taberrors input {
+    border: 1px solid red;
+}
+td.taberrors textarea {
+    border: 1px solid red;
+}
+
+
+/* TABLES */
+
+table {
+    border: 0;
+    width: 100%
+}
+tr {
+    border: 0;
+}
+td, th {
+    font: helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 10px;
+    padding: 8px 4px;
+    text-align: left;
+    vertical-align: top;
+}
+th {
+    background: #fff url(../images/skin/shadow.jpg);
+    color: #666;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 17px;
+    padding: 2px 6px;
+}
+th a:link, th a:visited, th a:hover {
+    color: #333;
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    width: 100%;
+}
+th.asc a, th.desc a {
+    background-position: right;
+    background-repeat: no-repeat;
+}
+th.asc a {
+    background-image: url(../images/skin/sorted_asc.gif);
+}
+th.desc a {
+    background-image: url(../images/skin/sorted_desc.gif);
+}
+
+.odd {
+    background: #f7f7f7;
+}
+.even {
+    background: #fff;
+}
+
+/* LIST */
+
+.list table {
+    border-collapse: collapse;
+}
+.list th, .list td {
+    border-left: 1px solid #ddd;
+}
+.list th:hover, .list tr:hover {
+    background: #b2d1ff;
+}
+
+/* PAGINATION */
+
+.paginateButtons {
+    background: #fff url(../images/skin/shadow.jpg) bottom repeat-x;
+    border: 1px solid #ccc;
+    border-top: 0;
+    color: #666;
+    font-size: 10px;
+    overflow: hidden;
+    padding: 10px 3px;
+}
+.paginateButtons a {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-color: #ccc #aaa #aaa #ccc;
+    color: #666;
+    margin: 0 3px;
+    padding: 2px 6px;
+}
+.paginateButtons span {
+    padding: 2px 3px;
+}
+
+/* TAB DIALOG */
+
+.tabDialog table {
+    padding: 10px 10px;
+}
+
+.prop {
+    padding: 20px;
+}
+.prop .name {
+    text-align: left;
+    width: 18%;
+    font-weight:bold;
+    font-size: 14px;
+    white-space: nowrap;
+}
+.prop .value {
+    text-align: left;
+    max-width: 50%;
+    font-size: 12px;
+}
+
+/* CREATE/LOGIN DIALOG */
+
+
+.createDialog table {
+	background: url(../images/backgrounds/bio_bkgd.png) no-repeat;
+    padding: 0px 20px 20px 20px;
+    margin-left: 25px;
+    z-index: 5;
+    width:30%;
+}
+
+.createProp {
+    padding: 10px;
+    margin-left:10px;
+}
+.createProp .name {
+    text-align: left;
+    width: 18%;
+    font-weight:bold;
+    font-size: 14px;
+    white-space: nowrap;
+    padding: 10px 0px 0px 25px;
+}
+.createProp .value {
+    text-align: left;
+    white-space: preline;
+    font-size: 14px;
+    padding: 5px 0px 10px 0px;
+}
+
+
+/* USER ACCOUNT PANEL DIALOG */
+
+
+.userDialog table {
+    padding: 10px 0;
+}
+
+.prop {
+    padding: 10px;
+}
+.prop .name {
+    text-align: left;
+    width: 18%;
+    font-weight:bold;
+    font-size: 14px;
+    white-space: nowrap;
+}
+.prop .value {
+    text-align: left;
+    white-space: preline;
+    font-size: 14px;
+}
+
+
+/* ACTION BUTTONS */
+
+.buttons {
+    color: #666;
+    font-size: 10px;
+    overflow: hidden;
+    padding: 20px 20px 0px 0px;
+    position: relative;
+}
+
+.buttons input {
+	background: url(../images/buttons/updateButton.png) center no-repeat;
+    border: 0;
+    color: #19BFBB;
+    cursor: pointer;
+    font-size: 16px;
+    float: right;
+    font: Helvetica;
+    font-weight: bold;
+    margin-left: 6px;
+    overflow: visible;
+    padding: 2px 6px;
+}
