@@ -8,9 +8,9 @@
     </head>
     <body>	
     	<div>
-        	<div class="careerstab" style="z-index:6"><img src="../../images/buttons/careers.png"/></a></div>
+        	<div class="educationtab" style="z-index:6"><img src="../../images/buttons/education.png"/></a></div>
 		</div>
-        <div class="careersbody">
+        <div class="educationbody">
 	        <div class="buttons">
 	             <g:form>
 	             	<g:hiddenField name="id" value="${userInstance?.id}" />

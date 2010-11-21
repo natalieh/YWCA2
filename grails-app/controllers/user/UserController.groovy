@@ -158,7 +158,29 @@ class UserController {
 	
 	def careers = {
 		def userInstance = User.get(params.id)
-		[userInstance: userInstance]
+		def bioInstance = userInstance.getBio()
+		[userInstance: userInstance, bioInstance: bioInstance]
+	}
+	
+	/*
+	 * All Education methods
+	 */
+	
+	def education = {
+		def userInstance = User.get(params.id)
+		def bioInstance = userInstance.getBio()
+		[userInstance: userInstance, bioInstance: bioInstance]
+	}
+	
+	
+	/*
+	 * All Project methods
+	 */
+	
+	def projects = {
+		def userInstance = User.get(params.id)
+		def bioInstance = userInstance.getBio()
+		[userInstance: userInstance, bioInstance: bioInstance]
 	}
 	
 }

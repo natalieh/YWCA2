@@ -93,7 +93,6 @@ input:focus, select:focus, textarea:focus {
 	margin-top: 120px;
 	margin-left: 25px;
 	position: absolute;
-	float:left;
 	z-index:5;
 }
 
