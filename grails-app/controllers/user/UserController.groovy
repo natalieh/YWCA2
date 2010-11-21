@@ -143,13 +143,22 @@ class UserController {
 			if (!bioInstance.hasErrors() && bioInstance.save(flush: true)) {
 				flash.message = "${message(code: 'user.updated.label')}"
 				userInstance.setBio(bioInstance)
-				redirect(action: "portfolio", id: userInstance.id)
+				redirect(action: "index", id: userInstance.id)
 			}
 			else {
-				render(view: "portfolio", model: [userInstance: userInstance, bioInstance: bioInstance])
+				redirect(action: "index", id: userInstance.id)
 			}
 		}
-		render(view:"portfolio", model: [userInstance: userInstance, bioInstance: bioInstance])
+		redirect(view:"index", id: userInstance.id)
+	}
+	
+	/*
+	 * All Careers methods
+	 */
+	
+	def careers = {
+		def userInstance = User.get(params.id)
+		[userInstance: userInstance]
 	}
 	
 }

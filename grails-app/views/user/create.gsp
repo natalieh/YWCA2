@@ -24,9 +24,7 @@
                 
                     <table>
                         <tbody>
-                        <tr class="createProp">
-                        	<td><h3><g:message code="default.create.label" args="[entityName]" /></h3>           					</td>
-           					</tr>
+           	             <td><h3><g:message code="default.create.label" args="[entityName]" /></h3></td>
                             <tr class="createProp">
                                 <td valign="top" class="name">
                                     <label for="login"><g:message code="user.login.label" default="Login" /></label>

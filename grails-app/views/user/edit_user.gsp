@@ -11,8 +11,7 @@
 </head>
 <body>
 <div>
-<div class="biotab" style="z-index: 5"><a
-	href="${createLink(uri: '/')}"></a></div>
+<div class="biotab" style="z-index: 5"></div>
 </div>
 <div class="biobody">
 <g:hasErrors bean="${userInstance}">
